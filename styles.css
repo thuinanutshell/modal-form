@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Optional: overlay effect */
+    z-index: 10;
+}
+
+select {
+    background-color: #C5D3E8;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    max-width: 500px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#prompts {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 30px;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+textarea {
+    min-height: 150px;
+    padding: 10px;
+    resize: vertical;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    height: 30px;
+    background-color: #555879;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#open-modal {
+    width: 200px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+}
+
+.entry {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 20px 50px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+#answer {
+    display: none;
+    margin: 20px 50px;
+}

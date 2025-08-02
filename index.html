@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Journal Modal</title>
+</head>
+<body>
+    <h1>Hi friend, how are you today?</h1>
+    <button id="open-modal">Write an entry</button>
+    <div id="modal">
+        <form>
+            <label for="prompts">Choose a journal prompt for today</label>
+            <select name="prompts" id="prompts">
+                <option value="What does success mean to you?">What does success mean to you?</option>
+                <option value="How have you grown this year?">How have you grown this year?</option>
+                <option value="What makes you uniquely you?">What makes you uniquely you?</option>
+            </select>
+            <textarea id="input" placeholder="Your answer here..."></textarea>
+            <button id="save-btn">Save Entry</button>
+        </form>
+    </div>
+    <div id="answer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
