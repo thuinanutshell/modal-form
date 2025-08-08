@@ -1,6 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -17,14 +18,13 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.3); /* Optional: overlay effect */
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
 
 select {
     background-color: #C5D3E8;
 }
-
 
 form {
     display: flex;
@@ -64,6 +64,7 @@ button {
 }
 
 #open-modal {
+    margin-top: 20px;
     width: 200px;
 }
 
@@ -75,15 +76,45 @@ select:focus {
     outline: none;
 }
 
+#answer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px;
+    margin: 20px 50px;
+    justify-items: center;
+}
+
 .entry {
     border-radius: 10px;
     border: 1px solid black;
-    margin: 20px 50px;
     padding: 15px;
     background-color: #f9f9f9;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-#answer {
-    display: none;
-    margin: 20px 50px;
+.radio {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 4px 8px;
+    width: 300px;
+}
+
+#prompt-radios {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+#layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }

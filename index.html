@@ -7,21 +7,21 @@
     <title>Journal Modal</title>
 </head>
 <body>
-    <h1>Hi friend, how are you today?</h1>
-    <button id="open-modal">Write an entry</button>
+    <div id="layout">
+        <h1>Hi friend, how are you today?</h1>
+        <div id="prompt-radios"></div>
+        <button id="open-modal">Write an entry</button>
+    </div>
     <div id="modal">
         <form>
             <label for="prompts">Choose a journal prompt for today</label>
-            <select name="prompts" id="prompts">
-                <option value="What does success mean to you?">What does success mean to you?</option>
-                <option value="How have you grown this year?">How have you grown this year?</option>
-                <option value="What makes you uniquely you?">What makes you uniquely you?</option>
-            </select>
+            <select id="prompts"></select>
             <textarea id="input" placeholder="Your answer here..."></textarea>
             <button id="save-btn">Save Entry</button>
+            <button id="close-btn" type="button">Close</button>
         </form>
     </div>
     <div id="answer"></div>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
